@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const useLocalStorage = (key, value) => {
+export const useLocalStorage = (key, value) => {
     // To retrieve an item from localStorage, call localStorage.getItem('itemName')
     // If that item doesn't exist, it will return undefined
     const [storedValue, setStoredValue] = useState(() => {
